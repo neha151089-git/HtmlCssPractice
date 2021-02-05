@@ -1,0 +1,270 @@
+/** Orange-color #e67e22 **/
+
+
+/*-------------------------------------------------------------*/
+/*-------------------INITIAL SETUP-----------------------------*/
+/*-------------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #403f3f;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/** ---- REUSABLE STYLES ---- **/
+
+header {
+    background-image: linear-gradient(rgba(103, 97, 97, 0.71), rgba(103, 97, 97, 0.71)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/** ---- HEADINGS ---- **/
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    word-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-size: 200%;
+}
+
+h2 {
+    word-spacing: 3px;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ----- SMALL HORIZONTAL LINE -----*/
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*---------------------------------*/
+h3 {
+    word-spacing: 2px;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+.section-features {
+    margin: 80px;
+}
+
+.box {
+    padding: 1px;
+}
+
+.box p {
+    word-spacing: 1px;
+    font-size: 90%;
+}
+
+.box i {
+    display: block;
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.long-copy {
+    width: 70%;
+    margin-left: 15%;
+    word-spacing: 2px;
+    font-size: 110%;
+}
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/** ---- BUTTONS ---- **/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 240px;
+    font-size: 70%;
+    padding: 10px;  
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+    margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+};
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+       color: #fff;
+}
+
+/**
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid green;
+    border-right: 40px solid yellow transparent;
+    border-bottom: 40px solid red transparent;
+    border-left: 40px solid black;
+}
+**/
+
+.logo {
+    height: 100px;
+    width: auto;
+    margin: 20px;
+    float: left;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    padding: 10px 0;
+}
+
+.meals-section {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-section li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*-------HOW IT WORKS -----------*/
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
+
+.app-phone {
+    width: 40%;
+    text-align: center;
+}
+
+.steps-box div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.steps-box p {
+    margin-bottom: 50px;
+    font-size: 100%;
+}
+
+.btns {
+    margin-top: 80px;
+}
+.btn-app img{
+    width: auto;
+    height: 50px;
+    margin-right: 20px;
+}
